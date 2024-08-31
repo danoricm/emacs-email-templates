@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Emacs
+      uses: aquasecurity/emacs-setup@v1
+    - name: Run Emacs Tests
+      run: emacs --batch -l ert -f ert-run-tests-batch-and-exit
