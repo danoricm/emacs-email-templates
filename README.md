@@ -15,4 +15,4 @@ A powerful Emacs package for managing email templates across multiple email clie
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/emacs-email-templates.git
+   git clone https://github.com/danoricm/emacs-email-templates.git
